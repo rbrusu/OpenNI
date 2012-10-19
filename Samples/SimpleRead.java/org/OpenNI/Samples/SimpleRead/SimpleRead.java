@@ -57,7 +57,6 @@ public class SimpleRead implements IObserver<ErrorStateEventArgs>
 		}
 	}
 	
-	@Override
 	public void update(IObservable<ErrorStateEventArgs> arg0, ErrorStateEventArgs arg1)
 	{
 		System.out.printf("Global error state has changed: %s", arg1.getCurrentError());

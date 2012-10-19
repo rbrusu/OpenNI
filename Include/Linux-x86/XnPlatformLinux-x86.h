@@ -164,7 +164,7 @@ typedef size_t				XnSizeT;
 #define XN_STRINGIFY_HELPER(n) #n
 
 /** Asserts an expression, only on Debug build. */
-#define XN_ASSERT(x)
+#define XN_ASSERT(x) ((void)(x))
 
 //---------------------------------------------------------------------------
 // API Export/Import Macros

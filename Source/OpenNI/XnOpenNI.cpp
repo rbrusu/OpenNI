@@ -7061,9 +7061,9 @@ XN_C_API XnStatus xnScriptNodeRun(XnNodeHandle hScript, XnEnumerationErrors* pEr
 #if (XN_PLATFORM == XN_PLATFORM_WIN32)
 	#define XN_OPEN_NI_FILES_LOCATION "\\Data\\"
 #elif (CE4100)
-	#define XN_OPEN_NI_FILES_LOCATION "/usr/etc/ni/"
+	#define XN_OPEN_NI_FILES_LOCATION "/etc/openni/"
 #elif (XN_PLATFORM == XN_PLATFORM_LINUX_X86 || XN_PLATFORM == XN_PLATFORM_LINUX_ARM || XN_PLATFORM == XN_PLATFORM_MACOSX)
-	#define XN_OPEN_NI_FILES_LOCATION "/var/lib/ni/"
+	#define XN_OPEN_NI_FILES_LOCATION "/etc/openni/"
 #elif (XN_PLATFORM == XN_PLATFORM_ANDROID_ARM)
 	#define XN_OPEN_NI_FILES_LOCATION "/data/ni/"
 #else
@@ -7082,7 +7082,7 @@ XnStatus xnGetOpenNIConfFilesPath(XnChar* strDest, XnUInt32 nBufSize)
 			return nRetVal;
 		#else
 			// use root FS
-			strDest[0] = '\0';
+			strcpy (strDest, "");
 		#endif
 	}
 	else

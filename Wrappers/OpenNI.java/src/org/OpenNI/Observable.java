@@ -30,7 +30,6 @@ public abstract class Observable<Args> implements IObservable<Args>
 		this.observers = new ArrayList<IObserver<Args>>();
 	}
 	
-	@Override
 	public void addObserver(IObserver<Args> observer) throws StatusException 
 	{
 		if (this.observers.size() == 0)
@@ -44,7 +43,6 @@ public abstract class Observable<Args> implements IObservable<Args>
 		this.observers.add(observer);
 	}
 
-	@Override
 	public void deleteObserver(IObserver<Args> observer) 
 	{
 		this.observers.remove(observer);

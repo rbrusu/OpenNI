@@ -49,7 +49,11 @@
 #elif defined(_ARC)
 	#include "ARC/XnOSARC.h"
 #else
-	#error OpenNI OS Abstraction Layer - Unsupported Platform!
+#if defined __INTEL_COMPILER
+   #include "Linux-x86/XnOSLinux-x86.h"
+ #else
+   #error OpenNI OS Abstraction Layer - Unsupported Platform!
+#endif
 #endif
 
 //---------------------------------------------------------------------------

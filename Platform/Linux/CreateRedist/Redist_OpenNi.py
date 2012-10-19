@@ -313,12 +313,12 @@ shutil.copy("Bin/" + PLATFORM + "-Release/libOpenNI.jni"+LIBS_TYPE, REDIST_DIR +
 MonoDetected = 0
 shutil.copy("Bin/" + PLATFORM + "-Release/niReg", REDIST_DIR + "/Bin")
 shutil.copy("Bin/" + PLATFORM + "-Release/niLicense", REDIST_DIR + "/Bin")
-if PLATFORM == 'x86' or PLATFORM == 'x64':
-    if (os.path.exists("/usr/bin/gmcs")):
-        shutil.copy("Bin/" + PLATFORM + "-Release/OpenNI.net.dll", REDIST_DIR + "/Bin")
-        shutil.copy("Bin/" + PLATFORM + "-Release/OpenNI.net.dll", REDIST_DIR + "/Samples/Bin/" + PLATFORM + "-Debug")
-        shutil.copy("Bin/" + PLATFORM + "-Release/OpenNI.net.dll", REDIST_DIR + "/Samples/Bin/" + PLATFORM + "-Release")
-        MonoDetected = 1
+#if PLATFORM == 'x86' or PLATFORM == 'x64':
+#    if (os.path.exists("/usr/bin/gmcs")):
+#        shutil.copy("Bin/" + PLATFORM + "-Release/OpenNI.net.dll", REDIST_DIR + "/Bin")
+#        shutil.copy("Bin/" + PLATFORM + "-Release/OpenNI.net.dll", REDIST_DIR + "/Samples/Bin/" + PLATFORM + "-Debug")
+#        shutil.copy("Bin/" + PLATFORM + "-Release/OpenNI.net.dll", REDIST_DIR + "/Samples/Bin/" + PLATFORM + "-Release")
+#        MonoDetected = 1
         
 # java wrapper
 shutil.copy("Bin/" + PLATFORM + "-Release/org.OpenNI.jar", REDIST_DIR + "/Jar")

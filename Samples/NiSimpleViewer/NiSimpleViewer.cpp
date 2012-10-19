@@ -36,7 +36,7 @@ using namespace xn;
 //---------------------------------------------------------------------------
 // Defines
 //---------------------------------------------------------------------------
-#define SAMPLE_XML_PATH "../../../../Data/SamplesConfig.xml"
+#define SAMPLE_XML_PATH "/etc/openni/SamplesConfig.xml"
 
 #define GL_WIN_SIZE_X 1280
 #define GL_WIN_SIZE_Y 1024

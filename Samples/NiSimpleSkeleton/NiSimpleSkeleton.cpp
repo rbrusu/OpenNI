@@ -27,7 +27,7 @@
 //---------------------------------------------------------------------------
 // Defines
 //---------------------------------------------------------------------------
-#define SAMPLE_XML_PATH "../../../../Data/SamplesConfig.xml"
+#define SAMPLE_XML_PATH "/etc/openni/SamplesConfig.xml"
 #define SAMPLE_XML_PATH_LOCAL "SamplesConfig.xml"
 
 //---------------------------------------------------------------------------

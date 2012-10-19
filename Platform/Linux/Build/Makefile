@@ -110,14 +110,14 @@ ifeq "$(FORCE_BUILD_CLR)" "1"
 	endif
 endif
 
-ifdef MONO_INSTALLED
-	ALL_PROJS += $(ALL_MONO_PROJS)
-	ALL_PROJS += $(MONO_SAMPLES)
+#ifdef MONO_INSTALLED
+#	ALL_PROJS += $(ALL_MONO_PROJS)
+#	ALL_PROJS += $(MONO_SAMPLES)
 	
-	ifdef MONO_WINFORMS_INSTALLED
-		ALL_PROJS += $(MONO_FORMS_SAMPLES)
-	endif
-endif
+#	ifdef MONO_WINFORMS_INSTALLED
+#		ALL_PROJS += $(MONO_FORMS_SAMPLES)
+#	endif
+#endif
 
 ALL_PROJS_CLEAN = $(foreach proj,$(ALL_PROJS),$(proj)-clean)
 

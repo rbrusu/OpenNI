@@ -33,7 +33,6 @@ public class UserTracker extends Component
 {
 	class NewUserObserver implements IObserver<UserEventArgs>
 	{
-		@Override
 		public void update(IObservable<UserEventArgs> observable,
 				UserEventArgs args)
 		{
@@ -56,7 +55,6 @@ public class UserTracker extends Component
 	}
 	class LostUserObserver implements IObserver<UserEventArgs>
 	{
-		@Override
 		public void update(IObservable<UserEventArgs> observable,
 				UserEventArgs args)
 		{
@@ -67,7 +65,6 @@ public class UserTracker extends Component
 	
 	class CalibrationCompleteObserver implements IObserver<CalibrationProgressEventArgs>
 	{
-		@Override
 		public void update(IObservable<CalibrationProgressEventArgs> observable,
 				CalibrationProgressEventArgs args)
 		{
@@ -99,7 +96,6 @@ public class UserTracker extends Component
 	}
 	class PoseDetectedObserver implements IObserver<PoseDetectionEventArgs>
 	{
-		@Override
 		public void update(IObservable<PoseDetectionEventArgs> observable,
 				PoseDetectionEventArgs args)
 		{

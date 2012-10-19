@@ -346,7 +346,7 @@ typedef XnUInt16 XnLabel;
 
 // deprecated pragma is only supported in Visual Studio
 #if (XN_PLATFORM == XN_PLATFORM_WIN32)
-#pragma deprecated("XN_CAPABILITY_ANTI_FILCKER")
+//#pragma deprecated("XN_CAPABILITY_ANTI_FILCKER")
 #endif
 
 //---------------------------------------------------------------------------

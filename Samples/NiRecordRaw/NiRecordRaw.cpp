@@ -30,7 +30,7 @@
 //---------------------------------------------------------------------------
 // Defines
 //---------------------------------------------------------------------------
-#define SAMPLE_XML_PATH "../../../../Data/SamplesConfig.xml"
+#define SAMPLE_XML_PATH "/etc/openni/SamplesConfig.xml"
 #define RECORDING_FILE_NAME "recordingWithRaw.oni"
 #define RAW_NODE_NAME "Raw1"
 

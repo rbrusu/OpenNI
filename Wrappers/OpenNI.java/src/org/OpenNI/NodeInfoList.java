@@ -90,12 +90,10 @@ public class NodeInfoList extends ObjectWrapper implements Iterable<NodeInfo>
 		WrapperUtils.throwOnError(status);
 	}
 
-	@Override
 	public Iterator<NodeInfo> iterator() {
 		return new NodeInfoListIterator(toNative());
 	}
 
-	@Override
 	protected void freeObject(long ptr) 
 	{
 		if (this.own)
@@ -111,13 +109,11 @@ public class NodeInfoList extends ObjectWrapper implements Iterable<NodeInfo>
 			this.it = NativeMethods.xnNodeInfoListGetFirst(pNodeInfoList);
 		}
 		
-		@Override
 		public boolean hasNext() 
 		{
 			return NativeMethods.xnNodeInfoListIteratorIsValid(this.it);
 		}
 
-		@Override
 		public NodeInfo next() 
 		{
 			if (!hasNext())
@@ -138,7 +134,6 @@ public class NodeInfoList extends ObjectWrapper implements Iterable<NodeInfo>
 			return next;
 		}
 
-		@Override
 		public void remove() 
 		{
 			throw new UnsupportedOperationException();

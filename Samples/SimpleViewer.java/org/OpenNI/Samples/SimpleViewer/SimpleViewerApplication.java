@@ -41,11 +41,8 @@ public class SimpleViewerApplication
         	this.frame = frame;
         	frame.addKeyListener(new KeyListener()
     		{
-    			@Override
     			public void keyTyped(KeyEvent arg0) {}
-    			@Override
     			public void keyReleased(KeyEvent arg0) {}
-    			@Override
     			public void keyPressed(KeyEvent arg0) {
     				if (arg0.getKeyCode() == KeyEvent.VK_ESCAPE)
     				{
