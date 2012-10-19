@@ -1,0 +1,8 @@
+Package: openni-dev
+Version: __VERSION__
+Section: devel
+Priority: optional
+Architecture: __ARCHITECTURE__
+Depends: libstdc++6 (>= 4.4), libusb-1.0-0 (>= 1.0.8)
+Maintainer: Open Perception, Inc (http://www.openperception.org)
+Description: OpenNI developer package
