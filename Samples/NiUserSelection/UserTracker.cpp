@@ -28,7 +28,11 @@
 // the filename for saving/loading calibration.
 #define XN_CALIBRATION_FILE_NAME "UserCalibration.bin"
 
+#ifdef _WIN32
+#define SAMPLE_XML_PATH "../../../Data/SamplesConfig.xml"
+#else
 #define SAMPLE_XML_PATH "/etc/openni/SamplesConfig.xml"
+#endif
 
 
 float *UserTracker::s_pDepthHist=NULL;

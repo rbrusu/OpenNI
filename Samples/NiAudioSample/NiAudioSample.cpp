@@ -33,7 +33,11 @@
 //---------------------------------------------------------------------------
 // Defines
 //---------------------------------------------------------------------------
+#ifdef _WIN32
+#define SAMPLE_XML_PATH "../../../Data/SamplesConfig.xml"
+#else
 #define SAMPLE_XML_PATH "/etc/openni/SamplesConfig.xml"
+#endif
 
 #define NUMBER_OF_AUDIO_BUFFERS 100
 
