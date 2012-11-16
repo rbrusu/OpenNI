@@ -30,7 +30,11 @@
 //---------------------------------------------------------------------------
 // Defines
 //---------------------------------------------------------------------------
+#ifdef _WIN32
+#define SAMPLE_XML_PATH "../../../Data/SamplesConfig.xml"
+#else
 #define SAMPLE_XML_PATH "/etc/openni/SamplesConfig.xml"
+#endif
 #define SAMPLE_XML_PATH_LOCAL "SamplesConfig.xml"
 
 //---------------------------------------------------------------------------
