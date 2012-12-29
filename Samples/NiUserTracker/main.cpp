@@ -315,7 +315,11 @@ void glInit (int * pargc, char ** argv)
 }
 #endif // USE_GLES
 
+#ifdef _WIN32
+#define SAMPLE_XML_PATH "../../../Data/SamplesConfig.xml"
+#else
 #define SAMPLE_XML_PATH "/etc/openni/SamplesConfig.xml"
+#endif
 
 #define CHECK_RC(nRetVal, what)										\
 	if (nRetVal != XN_STATUS_OK)									\

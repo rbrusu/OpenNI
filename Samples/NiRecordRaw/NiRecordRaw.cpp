@@ -30,7 +30,11 @@
 //---------------------------------------------------------------------------
 // Defines
 //---------------------------------------------------------------------------
+#ifdef _WIN32
+#define SAMPLE_XML_PATH "../../../Data/SamplesConfig.xml"
+#else
 #define SAMPLE_XML_PATH "/etc/openni/SamplesConfig.xml"
+#endif
 #define RECORDING_FILE_NAME "recordingWithRaw.oni"
 #define RAW_NODE_NAME "Raw1"
 
