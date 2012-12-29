@@ -13,7 +13,7 @@ endif
 
 DISTRO=$(shell lsb_release -sc)
 
-OPENNI_PACKAGE_NAME=ros-openni-dev-${OPENNI_VERSION}~${DISTRO}_$(ARCH)${BUILD_NUMBER}
+OPENNI_PACKAGE_NAME=openni-dev-${OPENNI_VERSION}~${DISTRO}_$(ARCH)${BUILD_NUMBER}
 OPENNI_REDISTNAME=OpenNI-Bin-Dev-Linux-${OPENNI_ARCH}-v${OPENNI_VERSION}
 
 all: debian
